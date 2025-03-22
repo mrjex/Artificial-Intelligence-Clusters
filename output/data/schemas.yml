@@ -1,0 +1,53 @@
+
+# This schema covers the structure two categories:
+# - Unsupervised Clustering Methods:
+#   - Gaussian Mixture Model (GMM)
+#   - Normalized Cut
+#   - Mean Shift
+#
+# - Unsupervised Dimensionality Reduction:
+#   - Principal Component Analysis (PCA)
+#
+Cluster Method Schema (K-value):
+  Method: ""
+  Combinatorial Configurations:
+    PCA Levels: []
+    K Values: []
+  Run Time Data:
+    Total Execution Run Time: -1
+    Num MNIST Instances: -1
+    Results: []
+
+Cluster Method Schema (Kernel-width-value):
+  Method: ""
+  Combinatorial Configurations:
+    PCA Levels: []
+    Kernel-width Values: []
+  Run Time Data:
+    Total Execution Run Time: -1
+    Num MNIST Instances: -1
+    Results: []
+
+
+
+PCA Schema (K-value):
+  PCA Level: -1
+  TimeElapsedSum: -1
+  K-Combinations: []
+
+PCA Schema (Kermel-width-value):
+  PCA Level: -1
+  TimeElapsedSum: -1
+  Kernel-width Combinations: []
+
+
+
+Object Schema (K-value):
+  Clusters (K): -1
+  Rand Index Performance: -1
+  Time Elapsed: -1
+
+Object Schema (Kermel-width-value):
+  Kernel Width: -1
+  Rand Index Performance: -1
+  Time Elapsed: -1

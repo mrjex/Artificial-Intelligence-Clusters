@@ -1,0 +1,35 @@
+{
+    "Method": "Mean Shift",
+    "Combinatorial Configurations": {
+        "PCA Levels": [
+            10
+        ],
+        "Kernel-width Values": [
+            0.5,
+            1.0
+        ]
+    },
+    "Run Time Data": {
+        "Total Execution Run Time": 820.2125334739685,
+        "Num MNIST Instances": 10000,
+        "Results": [
+            {
+                "PCA Level": 10,
+                "TimeElapsedSum": 118.12529492378235,
+                "Kernel-width Combinations": [
+                    {
+                        "Kernel Width": 0.5,
+                        "Rand Index Performance": 0.8996391239123912,
+                        "Time Elapsed": 28.26224112510681
+                    },
+                    {
+                        "Kernel Width": 1.0,
+                        "Rand Index Performance": 0.89966400640064,
+                        "Time Elapsed": 29.6986083984375
+                    }
+                ]
+            }
+        ]
+    }
+}
+

@@ -1,0 +1,274 @@
+{
+    "Method": "Normalized Cut",
+    "Combinatorial Configurations": {
+        "PCA Levels": [
+            10,
+            50,
+            100,
+            200
+        ],
+        "K Values": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    "Run Time Data": {
+        "Total Execution Run Time": 1185.824227809906,
+        "Num MNIST Instances": 10000,
+        "Results": [
+            {
+                "PCA Level": 10,
+                "TimeElapsedSum": 296.0983374118805,
+                "K-Combinations": [
+                    {
+                        "Clusters (K)": 5,
+                        "Rand Index Performance": 0.738439803980398,
+                        "Time Elapsed": 25.991951942443848
+                    },
+                    {
+                        "Clusters (K)": 6,
+                        "Rand Index Performance": 0.7649629562956296,
+                        "Time Elapsed": 25.47788095474243
+                    },
+                    {
+                        "Clusters (K)": 7,
+                        "Rand Index Performance": 0.7846683868386839,
+                        "Time Elapsed": 25.550222873687744
+                    },
+                    {
+                        "Clusters (K)": 8,
+                        "Rand Index Performance": 0.7941057305730573,
+                        "Time Elapsed": 25.60906171798706
+                    },
+                    {
+                        "Clusters (K)": 9,
+                        "Rand Index Performance": 0.8099079307930793,
+                        "Time Elapsed": 26.553903341293335
+                    },
+                    {
+                        "Clusters (K)": 10,
+                        "Rand Index Performance": 0.8109280528052806,
+                        "Time Elapsed": 27.75109362602234
+                    },
+                    {
+                        "Clusters (K)": 11,
+                        "Rand Index Performance": 0.8227966596659666,
+                        "Time Elapsed": 27.60331439971924
+                    },
+                    {
+                        "Clusters (K)": 12,
+                        "Rand Index Performance": 0.8311139313931393,
+                        "Time Elapsed": 26.741040229797363
+                    },
+                    {
+                        "Clusters (K)": 13,
+                        "Rand Index Performance": 0.8351539953995399,
+                        "Time Elapsed": 27.765455961227417
+                    },
+                    {
+                        "Clusters (K)": 14,
+                        "Rand Index Performance": 0.8367428742874288,
+                        "Time Elapsed": 27.89617109298706
+                    },
+                    {
+                        "Clusters (K)": 15,
+                        "Rand Index Performance": 0.842414401440144,
+                        "Time Elapsed": 28.826098918914795
+                    }
+                ]
+            },
+            {
+                "PCA Level": 50,
+                "TimeElapsedSum": 298.8046464920044,
+                "K-Combinations": [
+                    {
+                        "Clusters (K)": 5,
+                        "Rand Index Performance": 0.7391431743174317,
+                        "Time Elapsed": 25.978198289871216
+                    },
+                    {
+                        "Clusters (K)": 6,
+                        "Rand Index Performance": 0.7625564556455645,
+                        "Time Elapsed": 26.841825008392334
+                    },
+                    {
+                        "Clusters (K)": 7,
+                        "Rand Index Performance": 0.7810612261226123,
+                        "Time Elapsed": 26.454689741134644
+                    },
+                    {
+                        "Clusters (K)": 8,
+                        "Rand Index Performance": 0.7965150915091509,
+                        "Time Elapsed": 27.00076985359192
+                    },
+                    {
+                        "Clusters (K)": 9,
+                        "Rand Index Performance": 0.8083284128412841,
+                        "Time Elapsed": 26.446306467056274
+                    },
+                    {
+                        "Clusters (K)": 10,
+                        "Rand Index Performance": 0.817248604860486,
+                        "Time Elapsed": 26.638001441955566
+                    },
+                    {
+                        "Clusters (K)": 11,
+                        "Rand Index Performance": 0.8264115611561156,
+                        "Time Elapsed": 27.313231468200684
+                    },
+                    {
+                        "Clusters (K)": 12,
+                        "Rand Index Performance": 0.827027602760276,
+                        "Time Elapsed": 27.503061294555664
+                    },
+                    {
+                        "Clusters (K)": 13,
+                        "Rand Index Performance": 0.8354362236223623,
+                        "Time Elapsed": 27.783107042312622
+                    },
+                    {
+                        "Clusters (K)": 14,
+                        "Rand Index Performance": 0.8402187418741874,
+                        "Time Elapsed": 28.124701499938965
+                    },
+                    {
+                        "Clusters (K)": 15,
+                        "Rand Index Performance": 0.8441978597859786,
+                        "Time Elapsed": 28.371824979782104
+                    }
+                ]
+            },
+            {
+                "PCA Level": 100,
+                "TimeElapsedSum": 297.2482991218567,
+                "K-Combinations": [
+                    {
+                        "Clusters (K)": 5,
+                        "Rand Index Performance": 0.7377795179517952,
+                        "Time Elapsed": 26.165802240371704
+                    },
+                    {
+                        "Clusters (K)": 6,
+                        "Rand Index Performance": 0.7614957295729573,
+                        "Time Elapsed": 26.76887345314026
+                    },
+                    {
+                        "Clusters (K)": 7,
+                        "Rand Index Performance": 0.7842392439243925,
+                        "Time Elapsed": 25.98916459083557
+                    },
+                    {
+                        "Clusters (K)": 8,
+                        "Rand Index Performance": 0.7965028702870287,
+                        "Time Elapsed": 25.526034832000732
+                    },
+                    {
+                        "Clusters (K)": 9,
+                        "Rand Index Performance": 0.8086728072807281,
+                        "Time Elapsed": 25.188965797424316
+                    },
+                    {
+                        "Clusters (K)": 10,
+                        "Rand Index Performance": 0.8160356635663566,
+                        "Time Elapsed": 25.944913387298584
+                    },
+                    {
+                        "Clusters (K)": 11,
+                        "Rand Index Performance": 0.8252270427042704,
+                        "Time Elapsed": 26.749990224838257
+                    },
+                    {
+                        "Clusters (K)": 12,
+                        "Rand Index Performance": 0.8267577157715772,
+                        "Time Elapsed": 27.46037793159485
+                    },
+                    {
+                        "Clusters (K)": 13,
+                        "Rand Index Performance": 0.8344087208720872,
+                        "Time Elapsed": 30.2486629486084
+                    },
+                    {
+                        "Clusters (K)": 14,
+                        "Rand Index Performance": 0.8351572757275728,
+                        "Time Elapsed": 28.429682731628418
+                    },
+                    {
+                        "Clusters (K)": 15,
+                        "Rand Index Performance": 0.8444724272427243,
+                        "Time Elapsed": 28.42288064956665
+                    }
+                ]
+            },
+            {
+                "PCA Level": 200,
+                "TimeElapsedSum": 293.67294478416443,
+                "K-Combinations": [
+                    {
+                        "Clusters (K)": 5,
+                        "Rand Index Performance": 0.738333293329333,
+                        "Time Elapsed": 25.329355001449585
+                    },
+                    {
+                        "Clusters (K)": 6,
+                        "Rand Index Performance": 0.7654789678967897,
+                        "Time Elapsed": 25.6295006275177
+                    },
+                    {
+                        "Clusters (K)": 7,
+                        "Rand Index Performance": 0.7840608460846085,
+                        "Time Elapsed": 25.47377061843872
+                    },
+                    {
+                        "Clusters (K)": 8,
+                        "Rand Index Performance": 0.7967399539953995,
+                        "Time Elapsed": 25.717496633529663
+                    },
+                    {
+                        "Clusters (K)": 9,
+                        "Rand Index Performance": 0.8062374437443744,
+                        "Time Elapsed": 25.32403874397278
+                    },
+                    {
+                        "Clusters (K)": 10,
+                        "Rand Index Performance": 0.8149854385438544,
+                        "Time Elapsed": 26.19795870780945
+                    },
+                    {
+                        "Clusters (K)": 11,
+                        "Rand Index Performance": 0.8230651465146515,
+                        "Time Elapsed": 27.131937265396118
+                    },
+                    {
+                        "Clusters (K)": 12,
+                        "Rand Index Performance": 0.8312031403140314,
+                        "Time Elapsed": 27.392837047576904
+                    },
+                    {
+                        "Clusters (K)": 13,
+                        "Rand Index Performance": 0.8369658565856586,
+                        "Time Elapsed": 27.45603609085083
+                    },
+                    {
+                        "Clusters (K)": 14,
+                        "Rand Index Performance": 0.8406674267426743,
+                        "Time Elapsed": 28.938113689422607
+                    },
+                    {
+                        "Clusters (K)": 15,
+                        "Rand Index Performance": 0.8440960496049605,
+                        "Time Elapsed": 28.73877716064453
+                    }
+                ]
+            }
+        ]
+    }
+}

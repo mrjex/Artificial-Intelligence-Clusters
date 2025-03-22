@@ -1,0 +1,127 @@
+{
+    "Method": "Mean Shift",
+    "Combinatorial Configurations": {
+        "PCA Levels": [
+            10,
+            50,
+            100,
+            200
+        ],
+        "Kernel-width Values": [
+            0.5,
+            1.0,
+            1.5,
+            2.0
+        ]
+    },
+    "Run Time Data": {
+        "Total Execution Run Time": 820.2125334739685,
+        "Num MNIST Instances": 10000,
+        "Results": [
+            {
+                "PCA Level": 10,
+                "TimeElapsedSum": 118.12529492378235,
+                "Kernel-width Combinations": [
+                    {
+                        "Kernel Width": 0.5,
+                        "Rand Index Performance": 0.8996391239123912,
+                        "Time Elapsed": 28.26224112510681
+                    },
+                    {
+                        "Kernel Width": 1.0,
+                        "Rand Index Performance": 0.89966400640064,
+                        "Time Elapsed": 29.6986083984375
+                    },
+                    {
+                        "Kernel Width": 1.5,
+                        "Rand Index Performance": 0.899808100810081,
+                        "Time Elapsed": 28.651382446289062
+                    },
+                    {
+                        "Kernel Width": 2.0,
+                        "Rand Index Performance": 0.9004267226722672,
+                        "Time Elapsed": 31.164103746414185
+                    }
+                ]
+            },
+            {
+                "PCA Level": 50,
+                "TimeElapsedSum": 201.17852973937988,
+                "Kernel-width Combinations": [
+                    {
+                        "Kernel Width": 0.5,
+                        "Rand Index Performance": 0.8996387638763876,
+                        "Time Elapsed": 49.75204825401306
+                    },
+                    {
+                        "Kernel Width": 1.0,
+                        "Rand Index Performance": 0.8996388438843884,
+                        "Time Elapsed": 49.76258850097656
+                    },
+                    {
+                        "Kernel Width": 1.5,
+                        "Rand Index Performance": 0.8996417241724173,
+                        "Time Elapsed": 50.28735542297363
+                    },
+                    {
+                        "Kernel Width": 2.0,
+                        "Rand Index Performance": 0.8996575257525753,
+                        "Time Elapsed": 51.037649154663086
+                    }
+                ]
+            },
+            {
+                "PCA Level": 100,
+                "TimeElapsedSum": 226.6424539089203,
+                "Kernel-width Combinations": [
+                    {
+                        "Kernel Width": 0.5,
+                        "Rand Index Performance": 0.8996387638763876,
+                        "Time Elapsed": 55.735392570495605
+                    },
+                    {
+                        "Kernel Width": 1.0,
+                        "Rand Index Performance": 0.8996387838783878,
+                        "Time Elapsed": 55.12190580368042
+                    },
+                    {
+                        "Kernel Width": 1.5,
+                        "Rand Index Performance": 0.899639303930393,
+                        "Time Elapsed": 57.5976676940918
+                    },
+                    {
+                        "Kernel Width": 2.0,
+                        "Rand Index Performance": 0.899643504350435,
+                        "Time Elapsed": 57.84260559082031
+                    }
+                ]
+            },
+            {
+                "PCA Level": 200,
+                "TimeElapsedSum": 274.266254901886,
+                "Kernel-width Combinations": [
+                    {
+                        "Kernel Width": 0.5,
+                        "Rand Index Performance": 0.8996387638763876,
+                        "Time Elapsed": 68.90782189369202
+                    },
+                    {
+                        "Kernel Width": 1.0,
+                        "Rand Index Performance": 0.8996387638763876,
+                        "Time Elapsed": 68.89866137504578
+                    },
+                    {
+                        "Kernel Width": 1.5,
+                        "Rand Index Performance": 0.8996387838783878,
+                        "Time Elapsed": 68.71341514587402
+                    },
+                    {
+                        "Kernel Width": 2.0,
+                        "Rand Index Performance": 0.8996392439243924,
+                        "Time Elapsed": 67.38245964050293
+                    }
+                ]
+            }
+        ]
+    }
+}
