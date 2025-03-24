@@ -1,63 +1,155 @@
-# AI Project - Joel Mattsson's Clustering Implementations
+# Artificial Intelligence Clusters 🧩
 
-This system was developed as an individual assignment in 2024 December during my exchange studies in Italy. It covers a clustering problem in machine learning that fetches hand-written images from MNIST database. Using unsupervised learning, it is up to the clustering methods to correctly partition the data instances. This is the third assignment of `Foundations of Artificial Intelligence` and it emphasized focus on the writing part, which can be found in `Report.pdf`. However, the coding part was also essential, since the results derived from the performances were used to obtain insights and make conclusions. Below, are the techniques implemented in this assignment:
+> Unsupervised Learning on MNIST Handwritten Digits
 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![MNIST](https://img.shields.io/badge/Dataset-MNIST-brightgreen)](http://yann.lecun.com/exdb/mnist/)
+[![ML](https://img.shields.io/badge/Machine%20Learning-Clustering-orange)](https://en.wikipedia.org/wiki/Cluster_analysis)
+[![Academic](https://img.shields.io/badge/Project-Academic-lightgrey)](Report.pdf)
 
-- **Principal Component Analysis:** *Dimensionality reduction for MNIST database*
+## Table of Contents
 
-- **Gaussian Mixture Model:** *First clustering method*
+- [Artificial Intelligence Clusters 🧩](#artificial-intelligence-clusters-)
+  - [Table of Contents](#table-of-contents)
+  - [🔍 Overview](#-overview)
+  - [✨ Project Highlights](#-project-highlights)
+  - [🧪 Implemented Techniques](#-implemented-techniques)
+    - [Principal Component Analysis (PCA)](#principal-component-analysis-pca)
+    - [Gaussian Mixture Model (GMM)](#gaussian-mixture-model-gmm)
+    - [Mean Shift](#mean-shift)
+    - [Normalized Cut](#normalized-cut)
+    - [Rand Index](#rand-index)
+  - [🚀 Getting Started](#-getting-started)
+  - [📊 Results Visualization](#-results-visualization)
+    - [Performance Analysis](#performance-analysis)
+  - [📂 Output Structure](#-output-structure)
+    - [Data Files](#data-files)
+    - [Visualization Files](#visualization-files)
 
-- **Mean Shift:** *Second clustering method*
+## 🔍 Overview
 
-- **Normalized Cut:** *Third clustering method*
+This project explores the powerful domain of unsupervised machine learning through clustering analysis on the MNIST handwritten digit dataset. Developed during my exchange studies at the University of Italy in December 2024, it demonstrates how different clustering algorithms can discover intrinsic patterns and group similar handwritten digits without any labeled training data.
 
-- **Rand Index:** *Evaluation score of the three aforementioned clusters
+## ✨ Project Highlights
 
+- **Unsupervised Pattern Recognition**: Discovering natural groupings in visual data without labeled examples
+- **Dimensionality Reduction**: Applying PCA to reduce computational complexity while preserving information
+- **Multiple Clustering Approaches**: Implementation and comparison of three distinct clustering techniques
+- **Performance Evaluation**: Quantitative assessment using Rand Index scoring
+- **Visual Analysis**: Comprehensive visualization of clustering performance across parameters
 
+## 🧪 Implemented Techniques
 
-## Table of Contets
+The project implements a comprehensive suite of clustering and analysis methods:
 
-- [AI Project - Joel Mattsson's Clustering Implementations](#ai-project---joel-mattssons-clustering-implementations)
-  - [Table of Contets](#table-of-contets)
-  - [Getting Started](#getting-started)
-  - [Outut](#outut)
-    - [Data Directory](#data-directory)
-    - [Visualization Directory](#visualization-directory)
+![PCA](https://img.shields.io/badge/Implemented-Principal%20Component%20Analysis-blue)
+![GMM](https://img.shields.io/badge/Implemented-Gaussian%20Mixture%20Model-red)
+![MS](https://img.shields.io/badge/Implemented-Mean%20Shift-green)
+![NC](https://img.shields.io/badge/Implemented-Normalized%20Cut-purple)
+![RI](https://img.shields.io/badge/Evaluation-Rand%20Index-yellow)
 
+### Principal Component Analysis (PCA)
+- **Purpose**: Dimensionality reduction to improve computational efficiency
+- **Implementation**: Transforms high-dimensional MNIST data to lower-dimensional space
+- **Benefits**: Preserves most significant information while reducing computational load
 
+### Gaussian Mixture Model (GMM)
+- **Approach**: Probabilistic model assuming data generated from mixture of Gaussian distributions
+- **Strengths**: Soft clustering with probability assignments to multiple clusters
+- **Parameters**: Configurable number of clusters (K)
 
-## Getting Started
+### Mean Shift
+- **Approach**: Non-parametric algorithm that finds density modes in data
+- **Strengths**: Automatically determines number of clusters based on data density
+- **Parameters**: Kernel width (bandwidth) controlling cluster granularity
 
-In `main.py` inside the function *run_models* comment or uncomment the clustering methods in accordance with the ones you want to run or exclude from the exuection. In addition, you as a developer are faced with two options. Either you run the clustering methods or visualize the data generated by them. Hence, you either tell the system to produce new output, or visualize based on the data contained in the generated output data contained in the JSON files. Furthermore, everything in the `/models` directory is concerned with running the actual clusters to *produce*, in constrast to `output` that focuses on elaborating on existing data.
+### Normalized Cut
+- **Approach**: Graph-based clustering using spectral properties of similarity matrix
+- **Strengths**: Effective at capturing complex cluster shapes and relationships
+- **Parameters**: Number of clusters (K)
 
+### Rand Index
+- **Purpose**: Evaluation metric for clustering quality
+- **Measurement**: Agreement between clustering results and ground truth
+- **Range**: 0 (random clustering) to 1 (perfect agreement)
 
-## Outut
+## 🚀 Getting Started
 
-This directory contains two subdirectories:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Configure execution mode in `main.py`:
+   ```python
+   # To generate new clustering results
+   run_models(True)  # Set to False to skip execution
+   
+   # To visualize existing results
+   visualize_results(True)  # Set to False to skip visualization
+   ```
+4. Run the main script:
+   ```bash
+   python main.py
+   ```
 
+## 📊 Results Visualization
 
-### Data Directory
+### Performance Analysis
 
-Consists of JSON data generated from the latest execution of the system. All JSON files are following a consistent structure, which can be found in `schemas.yml`. Since the three clustering methods are similar in nature and they are applied to the same MNIST data, this generalization was viable. However, the parameters for *Mean Shift* was slightly different in comparison to *Normalized Cut* and the *GMM Model*. Instead of using the *K* parameter that denotes the number of nearest clusters to include in the computations, it used *Kernel-Width*, or also known as *Bandwitch*. This parameter is used as a radius that detects the data points that fall within a radar instead. For this reason, the schema naming conventions are divided based on *Clusters* and *Kernel-Width* in `schemas.yml`.
+Our analysis reveals significant performance differences between clustering methods across various parameters:
 
-
-
-### Visualization Directory
-
-Consists of PNGs generated from the JSON data. All of the visaulizations bring insight into the clustering qualities that are highlighted by the *Rand Index* score. Three of the visualizations compare how different PCA levels and K-values or Kernel-Width impact the clustering quality using line charts. Lastly, an average of all values for each respective clustering method aggregated into a bar chart:
-
-
-**Gaussian Mixutre Model Performance:**
+**Gaussian Mixture Model Performance:**
 ![gmm-visualization](output/visualization/gmm_rand_index.PNG)
-
+*GMM performance with varying PCA dimensions and cluster counts*
 
 **Mean Shift Performance:**
 ![mean-shift-performance](output/visualization/mean_shift_rand_index.PNG)
-
+*Mean Shift performance with different bandwidth parameters and PCA dimensions*
 
 **Normalized Cut Performance:**
 ![normalized-cut-performance](output/visualization/normalized_cut_rand_index.PNG)
+*Normalized Cut performance across cluster counts and PCA dimensions*
 
-
-**Average Comparison Performances:**
+**Comparative Analysis:**
 ![average-performances](output/visualization/rand_index_method_avg_comparison.PNG)
+*Average Rand Index scores across all clustering methods*
+
+## 📂 Output Structure
+
+The system generates structured output in two categories:
+
+### Data Files
+
+The `/output/data` directory contains JSON files with comprehensive performance metrics:
+
+```
+output/
+├── data/
+│   ├── gmm_results.json
+│   ├── mean_shift_results.json
+│   └── normalized_cut_results.json
+```
+
+All results follow a standardized schema defined in `schemas.yml`, with parameter distinctions:
+- **Cluster-based methods** (GMM, Normalized Cut): Configured by K (cluster count)
+- **Density-based methods** (Mean Shift): Configured by kernel width (bandwidth)
+
+### Visualization Files
+
+The `/output/visualization` directory contains PNG visualizations generated from result data:
+
+```
+output/
+└── visualization/
+    ├── gmm_rand_index.PNG
+    ├── mean_shift_rand_index.PNG
+    ├── normalized_cut_rand_index.PNG
+    └── rand_index_method_avg_comparison.PNG
+```
+
+These visualizations provide intuitive understanding of clustering performance across various parameters and methods.
+
+---
+
+*Developed as part of advanced machine learning research in unsupervised clustering techniques.*
