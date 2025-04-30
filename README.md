@@ -147,9 +147,3 @@ output/
     ├── normalized_cut_rand_index.PNG
     └── rand_index_method_avg_comparison.PNG
 ```
-
-These visualizations provide intuitive understanding of clustering performance across various parameters and methods.
-
----
-
-*Developed as part of advanced machine learning research in unsupervised clustering techniques.*
