@@ -1,12 +1,6 @@
 # Artificial Intelligence Clusters
 
-![PCA](https://img.shields.io/badge/Implemented-Principal%20Component%20Analysis-blue)
-![GMM](https://img.shields.io/badge/Implemented-Gaussian%20Mixture%20Model-red)
-![MS](https://img.shields.io/badge/Implemented-Mean%20Shift-green)
-![NC](https://img.shields.io/badge/Implemented-Normalized%20Cut-purple)
-![RI](https://img.shields.io/badge/Evaluation-Rand%20Index-yellow)
-
-> Unsupervised Learning on MNIST Handwritten Digits
+> Unsupervised Learning on MNIST Handwritten Digits with **Gaussian Mixture Model**, **Normalized Cut**, **Mean Shift**, **PCA** and **Rand Index**
 
 ## Table of Contents
 
